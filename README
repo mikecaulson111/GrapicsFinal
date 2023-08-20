@@ -1,0 +1,48 @@
+Final First Submission
+
+Michael Caulson
+
+(Many thanks to professor for a great deal of starting code)
+
+To Compile and run the code, please just type 'make' into the terminal
+the makefile should compile everything. Then the Executable will be called 'final' or in other words, type:
+
+make
+./final
+
+This will run my program.
+
+
+CURRENT:
+
+Just as a reminder I chose to do a scene that will be spooky kinda
+These last couple weeks I have been working on just getting all the things
+to look correct and work right. This means I spent most of the time getting the chairs to look right and the bed and the paintings and the cabinet along with the weapons, I had to try to get the right textures, etc. This I have found to be very time consuming and quite the challenge, I think overall I have spent around 48 hours trying to get everything working, including the spotlight (thank you for the helpful hint about gl_lightsource[0].sporDirection). I was able to add a couch and table, but the big thing that I was able to get done this week was create what I call "crazy mode" or the more spooky stuff. When this mode is activated all of the crazy/spooky things happen, chairs get flipped over, the forks are stabbed into the table, the paintings either fall or have been rotated, the couch flips, and I have a Exit sign that lights up. I also added some more swords that fall out of the sky when crazy mode is activated and stab into the ground.
+
+Project Story:
+
+The aspects that I would like you to look at is, after running the executable you will see a dark scene with three spotlights pointing to a table, its hard to see much but then a ghost changes everything (crazy mode) to activate this press 'c'. You will see the spotlights do interesting things, the chairs will be in different positions, the forks will be standing up, knives/swords will fall out of the sky. By activating this mode, a clear way out is also illuminated by an exit sign emitting light(actually going to the exit sign/door will go no where but I want to keep coding in the future and make it lead somewhere). You may notice the paintings have been altered to more grotesque paintings too, this ghost really has it out for you. But just like that, you press 'c' again and everything goes back to normal, everything in its right place, not even the exit sign is illuminated. Maybe you don't like the spotlights overhead though, they are too dark/dont illuminate the scene well, well pressing 'k' will first go to a flashlight, which can be used to look around the room both when the ghost is haunting it and when it is not (again pressing 'c'). Finally even the flashlight gets old, so pressing 'k' one more time places a magically light emitting ball in the middle of the scene and swings it around illuminating all the ghost hauntings from different angles.
+
+Commentary:
+
+This is the basic jist of my project, a normal looking scene which when pressing 'c' changes everything and creates a more interesting scene becasue of all the carnage and the changed paintings, the painting on the wall near the fireplace to the right will also fall and hit the ground when crazy mode is activated. Pressing 'k' will change the shader mode, from spotlights overhead, to flashlight, to overall lighting, and back to spotlight overhead. In the overhead spotlight you can press the buttons labeled below to move them around (but they are locked to each other), to use Ylight you need to be in the overall lighting shader with the rotating ball. You can also have a perspective view of the scene by pressing 'm' which will flip between perspective and first person, but when going into perspective, or when pressing 'c' in perspective mode, the house wall gets in the way, which can be solved by pressing any of the arrow keys (I don't know what is causing this really), this mode can give a better overall view of the scene. The scene also has a cabinet with hanging sword/axe, and there is a fireplace with a smoldering lump of coal(this part does not look as good as I want in the future to make it look, probably with a shader).
+
+Also seeing the knives fall, paintings change/move, the silverware and bowls change, chairs change position, etc. is actually somewhat hard to see when using the overhead spotlight shader, so I reccommend starting out with pressing 'c' in the overhead spotlight shader mode to see the spotlights do fun things, then changing to either the flashlight or overall shader to actually see what happens when 'c' is pressed. 
+
+I have also hidden a CU logo somewhere in the scene (on the coffee table to left).
+
+This was a great class and a fun final project, thank you professor!
+
+
+Key Binds:
+w,a,s,d    ->  movement in normal sense
+space      ->  Enables the character to jump
+ARROW KEYS ->  look angle
+c          ->  Activate Crazy Mode (IMPORTANT FOR MY PROJECT)
+m          ->  changes projection mode
+k          ->  changes shader type, (Overhead Spotlight, Flashlight, Normal) (IMPORTANT FOR MY PROJECT)
+A          ->  enables/disables axes and information on screen
+Y/y        ->  Moves the light source up or down
+l          ->  Enables/disables lines mode vs fill mode
+[]         ->  Moves overhead spotlight in x-direction (left or right depending on which one you press)
++-         ->  Raises or lowers overhead spotlights in y-direction (+ up, - down)
